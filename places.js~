@@ -119,9 +119,8 @@ function addMarker1(map,latlong,title,content){
 
 // our getPlaces fxn is here ... suprising its so small :D 
 function getPlace(){
-//gets value from text box and then computes places
-
-	var query=document.getElementById("textbox").value 
+	var query=document.getElementById("textbox").value
+	//gets value from text box and then computes places 
 	callmap();
 	displayPlaces(map,googleLatAndLong,query);	
 }

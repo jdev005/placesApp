@@ -28,7 +28,7 @@ function displayLocation (position) {
  we set the latitude and longitude values and then call the showMap function */
 
 function showMap(coords){
-	 var googleLatAndLong= new google.maps.LatLng(coords.latitude,coords.longitude);
+	  googleLatAndLong= new google.maps.LatLng(coords.latitude,coords.longitude);
 // this make a map object by using google's map constructor
 
 
@@ -119,8 +119,9 @@ function addMarker1(map,latlong,title,content){
 
 // our getPlaces fxn is here ... suprising its so small :D 
 function getPlace(){
-	var query=document.getElementById("textbox").value
-	//gets value from text box and then computes places 
+//gets value from text box and then computes places
+
+	var query=document.getElementById("textbox").value 
 	callmap();
 	displayPlaces(map,googleLatAndLong,query);	
 }

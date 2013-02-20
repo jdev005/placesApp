@@ -28,7 +28,7 @@ function displayLocation (position) {
  we set the latitude and longitude values and then call the showMap function */
 
 function showMap(coords){
-	 var googleLatAndLong= new google.maps.LatLng(coords.latitude,coords.longitude);
+	  googleLatAndLong= new google.maps.LatLng(coords.latitude,coords.longitude);
 // this make a map object by using google's map constructor
 
 

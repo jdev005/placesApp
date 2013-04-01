@@ -12,12 +12,12 @@ function getMyLocation(){
 }
 
 /* the function above checks for geoloaction support in our system.
- geolocation is the property in the navigotor object, which checks for geolocation support.
- If there is support, it calls the getCurrentPosition method of the navigator.gelocation object.
+ geolocation is the property in the navigator object, which checks for geolocation support.
+ If it is support, it calls the getCurrentPosition method of the navigator.gelocation object.
  This method does the work of getting the browsers location , it has handler function(here named displayLocation)*/
 
 
-function displayLocation (position) {
+function displayLocation(position){
 	var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
 
@@ -87,7 +87,7 @@ function callback(results,status){
 function addMarker(map,result){
     
     //set marker options 
-    var markerOptions={
+     markerOptions={
         position : result.geometry.location,
         map : map ,
         title : result.name ,
